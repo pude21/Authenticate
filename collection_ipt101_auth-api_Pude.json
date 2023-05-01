@@ -1,0 +1,88 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "collection_Authenticate",
+    "dateExported": "2023-05-01T13:00:20.957Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "50388edd-19aa-42e9-b3ad-baf286ade9bd",
+            "colId": "fa23385d-1256-4c72-9d66-3af059d9a7d8",
+            "containerId": "",
+            "name": "Users Register",
+            "url": "localhost:4000/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-01T12:49:56.433Z",
+            "modified": "2023-05-01T12:49:56.433Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"Mharben\",\r\n    \"lastName\": \"Pude\",\r\n    \"username\": \"Mharben\",\r\n    \"password\": \"my-super-secret-password\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "93576dbf-bda4-4e07-9569-94d3f45b2ed5",
+            "colId": "fa23385d-1256-4c72-9d66-3af059d9a7d8",
+            "containerId": "",
+            "name": "Users Authenticate",
+            "url": "localhost:4000/users/authenticate",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-01T12:52:46.256Z",
+            "modified": "2023-05-01T12:52:46.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"Mharben\",\r\n    \"password\": \"my-super-secret-password\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d221d7a-bc71-4f08-97cd-70a091994252",
+            "colId": "fa23385d-1256-4c72-9d66-3af059d9a7d8",
+            "containerId": "",
+            "name": "Get/user  Bearer token",
+            "url": "localhost:4000/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-01T12:56:05.865Z",
+            "modified": "2023-05-01T12:56:05.865Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY4Mjk0NTUyNywiZXhwIjoxNjgzNTUwMzI3fQ.agQ-xfUFdgwOAhGXDIXzeXdVDL6ST4FqdEZGRTRYi0Y"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bd5e0b61-f7b6-4ae4-aeed-96f94d696c4c",
+            "colId": "fa23385d-1256-4c72-9d66-3af059d9a7d8",
+            "containerId": "",
+            "name": "Update User 1",
+            "url": "localhost:4000/users/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-05-01T12:58:59.527Z",
+            "modified": "2023-05-01T12:58:59.527Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"Foo\",\r\n    \"lastName\": \"Bar\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY4Mjk0NTUyNywiZXhwIjoxNjgzNTUwMzI3fQ.agQ-xfUFdgwOAhGXDIXzeXdVDL6ST4FqdEZGRTRYi0Y"
+            },
+            "tests": []
+        }
+    ]
+}
